@@ -50,4 +50,23 @@
 
   &__link {
   }
+
+  &__social-networks {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 41px;
+    height: 41px;
+    margin-left: 25px;
+    border-radius: 50%;
+    background: #f2962f;
+    svg {
+      color: #fff;
+    }
+  }
 }

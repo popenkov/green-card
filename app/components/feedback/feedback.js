@@ -10,5 +10,9 @@ if (feedbackPage) {
       nextEl: '.js-feedback-navigation--right',
       prevEl: '.js-feedback-navigation--left',
     },
+
+    pagination: {
+      el: '.js-feedback-pagination',
+    },
   });
 }
