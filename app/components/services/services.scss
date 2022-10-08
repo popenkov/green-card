@@ -1,0 +1,85 @@
+.services {
+  width: 100%;
+  height: auto;
+  &__container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    background-image: url(../../assets/images/crosses.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 153px;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.7;
+  }
+  &__title {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 64px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #14183e;
+  }
+
+  &__cards {
+    width: 100%;
+    margin: -30px;
+    margin-top: 66px;
+    display: flex;
+  }
+}
+
+.service {
+  width: calc(100% / 4 - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+
+  &__img {
+    max-width: 92px;
+    max-height: 75px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    object-fit: contain;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    /* text heading color */
+
+    color: #1e1d4c;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.7;
+  }
+}

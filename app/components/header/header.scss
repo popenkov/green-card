@@ -1,0 +1,41 @@
+.header {
+  &__wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 56px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-family: 'Volkhov';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 49px;
+    /* or 106% */
+
+    letter-spacing: -0.04em;
+
+    color: #ffffff;
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+    &-item {
+    }
+    &-link {
+      margin-left: 30px;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 22px;
+
+      color: #ffffff;
+    }
+  }
+}

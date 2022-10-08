@@ -11,6 +11,7 @@ html(lang="ru")
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
         title Green Card helpers
         include _styles.pug
 
@@ -21,7 +22,11 @@ html(lang="ru")
             - var mainPage = true
             include ./components/header/header.pug
             
-            main
+            main.main
+                include ./components/hero/hero.pug
+                include ./components/services/services.pug
+                include ./components/feedback/feedback.pug
+                include ./components/footer/footer.pug
                 //- include ./components/left-navigation-menu/left-navigation-menu.pug
                 //- include ./components/index-main/index-main.pug
 
