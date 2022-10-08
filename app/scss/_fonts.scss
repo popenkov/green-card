@@ -1,0 +1,82 @@
+//@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap");
+@font-face {
+  font-family: "Circe";
+  src: url("../fonts/Circe.woff") format("woff");
+}
+
+@mixin roboto($fs, $lh, $fw, $color) {
+  color: $color;
+  font-weight: $fw;
+  font-size: $fs;
+  font-family: "Roboto";
+  line-height: $lh;
+}
+
+@mixin raleway($fs, $lh, $fw, $color) {
+  color: $color;
+  font-weight: $fw;
+  font-size: $fs;
+  font-family: "Raleway";
+  line-height: $lh;
+}
+
+@mixin header-1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Raleway";
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+
+@mixin header-2 {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Raleway";
+  font-style: normal;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
+
+@mixin text {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 20px;
+}
+
+@mixin label {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+@mixin link {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+@mixin input {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}

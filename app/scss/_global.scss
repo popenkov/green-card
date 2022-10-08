@@ -1,0 +1,260 @@
+/**
+ * Global
+ */
+@charset "UTF-8";
+*,
+*::after,
+*::before {
+  outline: none !important;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  touch-action: manipulation;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0;
+  color: black;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: normal;
+  font-style: normal;
+  /*   -webkit-overflow-scrolling: touch; */
+  -webkit-tap-highlight-color: transparent;
+  /*   height: 100vh; */
+  background-color: #ececf3;
+
+  // убрал для попап задний фон без скролла
+  //overflow-x: hidden;
+
+  min-width: 320px;
+
+  scrollbar-color: rgba(14, 14, 43, 0.3) rgba(236, 236, 243, 1);
+  scrollbar-width: thin;
+}
+
+select.select2-hidden-accessible {
+  visibility: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #00b5c9 0%, #00ccbc 100%);
+  @media (max-width: 768px) {
+    min-height: -webkit-fill-available;
+  }
+}
+
+.lock {
+  /*   
+   */
+  /*   position: fixed; */
+  /*  overflow: hidden; */
+
+  overflow: hidden;
+  // убрал для попап задний фон без скролла
+  //height: 100vh;
+
+  @media (max-width: 768px) {
+    /*   height: 100vh; */
+  }
+}
+
+.select2-results__options {
+  scrollbar-color: rgba(14, 14, 43, 0.3) rgba(236, 236, 243, 1);
+  scrollbar-width: none;
+
+  .ps__rail-y {
+    top: 0 !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  @media (max-width: 768px) {
+    width: 0;
+    height: 0;
+  }
+
+  /*   @media (max-width: 1068px) {
+    display: none;
+
+    div:hover::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+  } */
+}
+
+div:hover::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-button {
+  height: 1px; //for vertical scrollbar
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 14, 43, 0.3);
+
+  border-radius: 2px;
+  width: 4px;
+  height: 124px;
+  padding-bottom: 45%;
+}
+
+.ps__rail-x {
+  &.ps--clicking {
+    height: 0 !important;
+  }
+  .ps__thumb-x {
+    height: 4px !important;
+    background: #0e0e2b;
+    opacity: 0.3;
+    border-radius: 2px;
+  }
+}
+
+.body__no-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+.body__no-scroll--left-menu {
+  height: 100vh;
+  overflow: hidden;
+  /*  position: fixed; */
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block;
+}
+
+.page-title {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #0e0e2b;
+    position: absolute;
+    top: -53px;
+    left: 16px;
+  }
+
+  .page-title-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-title-chevron {
+    margin-right: 7px;
+  }
+}
+
+.body_container--filter {
+  background-color: #0e0e2b;
+  opacity: 0.1;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 86px;
+  margin-bottom: 16px;
+  display: flex;
+  margin-bottom: 16px;
+  padding-right: 10px;
+
+  @media (max-width: 768px) {
+    margin-top: 134px;
+    margin-bottom: 16px;
+    padding-right: 0;
+  }
+
+  @media (min-width: 769px) and (max-width: 1068px) {
+    margin-top: 0;
+    padding-right: 0;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.svg-sprite {
+  display: none !important;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.breadcrumbs {
+  .breadcrumbs__container {
+    display: flex;
+    align-items: center;
+    .breadcrumbs__item {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: #0e0e2b;
+      margin-right: 7px;
+      &.active {
+        color: #8d8d9b;
+        cursor: context-menu;
+      }
+    }
+    .breadcrumbs__right-svg {
+      margin-right: 7px;
+      stroke: #8d8d9b;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1068px) {
+  .breadcrumbs {
+    display: none;
+  }
+}

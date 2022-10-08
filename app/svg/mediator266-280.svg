@@ -1,0 +1,7 @@
+  <svg class="education__mediator" width="266" height="280">
+              <pattern id="pattern266-280" width="100%" height="100%">
+              <image xlink:href="https://image.freepik.com/free-photo/close-up-portrait-man-looking-camera-outdoors_23-2148283854.jpg" width="266" height="280"   preserveAspectRatio="xMidYMin slice " ></image>
+              </pattern>
+              <path d="M16.5095 188.234C6.73413 174.798 0 158.675 0 140.76C0 120.606 8.03751 102.691 19.9852 88.8075C58.4349 44.0206 109.701 11.1023 169.657 1.02523C185.949 -1.66199 203.11 0.801292 218.533 9.9826C233.957 19.1639 244.818 33.2718 250.466 49.1711C271.972 107.618 270.017 169.872 251.552 226.527C245.904 244.218 234.826 260.341 217.882 270.418C202.676 279.376 185.732 281.167 169.657 279.376C115.784 273.777 49.5285 233.917 16.5095 188.234Z" fill="url(#pattern266-280)"/>
+            
+              </svg>

@@ -1,0 +1,6 @@
+<svg class="participants__form-result-mediator" width="40" height="42">
+<pattern id="pattern4042" width="100%" height="100%">
+<image xlink:href="https://image.freepik.com/free-photo/close-up-portrait-man-looking-camera-outdoors_23-2148283854.jpg" width="40" height="42"  preserveAspectRatio="xMidYMin slice " ></image>
+</pattern>
+<path d="M2.48263 28.2352C1.01265 26.2198 0 23.8013 0 21.114C0 18.0909 1.20865 15.4037 3.00529 13.3211C8.7872 6.6031 16.4964 1.66534 25.5123 0.153784C27.9622 -0.249298 30.5429 0.120194 32.8622 1.49739C35.1815 2.87459 36.8148 4.99077 37.6641 7.37567C40.8981 16.1427 40.6041 25.4808 37.8274 33.9791C36.9781 36.6327 35.3121 39.0512 32.7642 40.5628C30.4775 41.9064 27.9296 42.1751 25.5123 41.9064C17.4111 41.0666 7.44789 35.0876 2.48263 28.2352Z" fill="url(#pattern4042)"/>
+</svg>
