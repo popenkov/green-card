@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const submitButton = document.querySelector('.js-form-submit-btn');
+const mainForm = document.querySelector('.js-form--main');
+const successForm = document.querySelector('.js-form--success');
+const errorForm = document.querySelector('.js-form--error');
 
 document.addEventListener('click', (evt) => {
   if (evt.target.closest('.js-form-submit-btn')) {
@@ -59,10 +62,13 @@ document.addEventListener('click', (evt) => {
       .then((response) => response.json())
       .then((data) => {
         alert('Success');
+        mainForm.classList.remove('open');
+        successForm.classList.add('open');
       })
       .catch((error) => {
-        console.error('Error:', error);
         alert('Error');
+        mainForm.classList.remove('open');
+        error.classList.add('open');
       });
   }
 });
