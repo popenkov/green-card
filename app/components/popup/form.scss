@@ -1,0 +1,152 @@
+.input__container {
+  position: relative;
+  margin-top: 24px;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 21px 16px 7px 16px;
+  border: 1px solid #b6b5b5;
+  border-radius: 4px;
+  caret-color: #3b9eeb;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.012em;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.input__label {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.012em;
+  color: #777777;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  padding: 18px 20px 8px 16px;
+  border: 1px solid #b6b5b5;
+
+  border-radius: 4px;
+  caret-color: #3b9eeb;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.012em;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.input:focus ~ .input__label,
+.input__label.empty {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.012em;
+  color: #777777;
+}
+
+.input.valid ~ .input__label {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.012em;
+  color: #777777;
+}
+
+.input.error ~ .input__label {
+  position: absolute;
+  left: 16px;
+  top: 6px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.012em;
+  color: red;
+}
+
+.auth-popup .input.error ~ .input__label.empty {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.012em;
+  color: red;
+}
+
+.input:focus,
+.input:active,
+.input:target {
+  border: 2px solid #0078d7;
+  padding: 21px 16px 7px 15px;
+}
+
+// custom checkboxes
+.checkbox__container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.checkbox__input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox__label {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.012em;
+  color: #333333;
+
+  &::before {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    margin: 0;
+    width: 20px;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #b6b5b5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+}
+
+.checkbox__input > .checkbox__label {
+}
+
+.checkbox__input:checked ~ .checkbox__label::before {
+  background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2214%22%20height%3D%2210%22%20viewBox%3D%220%200%2014%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M5.21916%209.99989C4.98916%209.99989%204.76916%209.90489%204.61166%209.73739L0.559159%205.42156C0.243326%205.08656%200.260826%204.55906%200.595826%204.24406C0.931659%203.92906%201.45916%203.94572%201.77333%204.28072L5.21083%207.93989L12.2175%200.271557C12.5292%20-0.0692762%2013.0558%20-0.0917761%2013.3958%200.218224C13.735%200.528224%2013.7583%201.05572%2013.4483%201.39489L5.83416%209.72822C5.67833%209.89989%205.45666%209.99822%205.22499%209.99989H5.21916Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0078d7;
+  border-color: #0078d7;
+}

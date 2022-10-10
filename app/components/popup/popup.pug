@@ -1,0 +1,58 @@
+#form.popup.form.js-form--main
+    .popup__body.form__body
+      .popup__content.form__content
+        .popup__scroll.form__scroll
+            form.js-form.form
+                h3.form__title Форма обратной связи
+                p.form__subtitle Пожалуйста, оставьте заявку, и мы свяжемся с вами в течение 1 часа.
+
+                .form__input-container.input__container.js-input-container
+                    input(type="text", name="name", id="name").input.js-input.js-input-phone
+                    label(for="name").input__label.js-label Имя
+                .form__input-container.input__container.js-input-container
+                    input(type="text", name="phoneNumber", id="phoneNumber").input.js-input.js-input-phone
+                    label(for="phoneNumber").input__label.js-label Телефон
+                .form__input-container.input__container.js-input-container
+                    input(type="text", name="email", id="email").input.js-input.js-input-phone
+                    label(for="email").input__label.js-label Адрес электронной почты
+
+                .form__checkboxes 
+                    p.form__subtitle Предпочтительный способ связи
+                    .form__checkboxes-container 
+                        .form__checkbox-container.checkbox__container.js-checkbox-container
+                            input(type="checkbox",  name="methods"  value="Whatsapp" id="Whatsapp").checkbox__input.js-checkbox
+                            label(for="Whatsapp").checkbox__label.js-checkbox-label Whatsapp
+                        .form__checkbox-container.checkbox__container.js-checkbox-container
+                            input(type="checkbox",  name="methods"  value="Telegram" id="Telegram").checkbox__input.js-checkbox
+                            label(for="Telegram").checkbox__label.js-checkbox-label Telegram
+                        .form__checkbox-container.checkbox__container.js-checkbox-container
+                            input(type="checkbox",  name="methods"  value="Email" id="Email").checkbox__input.js-checkbox
+                            label(for="Email").checkbox__label.js-checkbox-label Email
+
+                .form__button-container
+                    input.form__button.js-form-submit-btn(type="submit", value="Send")
+
+
+
+
+        a.popup__close.popup__close-x.close-popup
+
+
+
+
+#form--success.popup.form-success.js-form--success    
+    .popup__body.form__body
+        .popup__content.form__content
+            h3.form__title Форма успешно отправлена.
+            p.form__subtitle Пожалуйста, ожидайте ответ в течение 1 часа.
+            button.form__close-button.close-popup ок
+
+
+
+
+#form--error.popup.form-error.js-form--error    
+    .popup__body.form__body
+      .popup__content.form__content
+            h3.form__title Произошла ошибка.
+            p.form__subtitle Пожалуйста, повторите запрос чуть позже.
+            button.form__close-button.close-popup ок
